@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+    text-decoration: none;
+}
+
+body{
+    background-color: #111317;
+}
+
+header  {
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px ;
+}
+
+.logo{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+.logo span{
+    color: #ff8b00;
+}
+
+.navigation a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color: #ff8b00;
+    transition: 0.5s;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.container{
+    color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+}
+
+.form-box h2{
+    color: #ff8b00;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.form-box form .field{
+    margin-bottom: 10px;
+}
+.form-box form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 1px solid #ff8b00;
+    outline: none;
+}
+.btn{
+    width: auto;
+    margin:auto;
+    display: block;
+    height: 35px;
+    background: #ff8b00;
+    border: 0;
+    border-radius: 10px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    padding: 0px 10px;
+}
+.btn:hover{
+    color: #fff;
+    background-color: #111317;
+    transition: 0.9s;
+}
+
+.links a{
+    text-decoration: none;
+    color: #111317;
+}
+
+.links a:hover{
+    color: #ff8b00;
+    transition: 0.5s;
+}
+
+.message{
+    text-align: center;
+    background: #111317;
+    padding: 15px 15px;
+    border:1px solid #ff8b00;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+@media (max-width:1053px){
+    header{
+        padding: 10px 20px;
+    }
+    .logo{
+        font-size: 1.2em;
+    }
+    .navigation a{
+        font-size: 0.7em;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .form-box form .input input {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    section{
+        padding: 80px 5px;
+    }
+}
+
+@media (max-width:840px){
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:480px){
+    .logo{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width:452px){
+    .navigation a{
+        padding-left: 5px;
+        font-size: 0.8em;
+    }
+    header{
+        padding: 12px 10px;
+    }
+}
+
+@media (max-width:355px){
+    body{
+        font-size: 10px;
+    }
+    .navigation a{
+        padding-left: 2px;
+        font-size: 0.8em;
+    }
+    header{
+        padding: 12px 8px;
+    }
+    .logo{
+        font-size: 1.4em;
+    }
+    .box{
+        padding: auto 10px;
+    }
+    .box{
+        padding: 25px 5px;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+    }
+    .navigation a{
+        padding-left: 2px;
+        font-size: 0.7em;
+    }
+    header{
+        padding: 12px 8px;
+    }
+    .logo{
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width:275px){
+    body{
+        font-size: 10px;
+    }
+    .navigation a{
+        padding-left: 2px;
+        font-size: 0.6em;
+    }
+    header{
+        padding: 12px 6px;
+    }
+    .logo{
+        font-size: 0.9em;
+    }
+    .container h2{
+        font-size: 20px;
+    }
+}

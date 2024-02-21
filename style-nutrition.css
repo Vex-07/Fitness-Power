@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+body{
+    background-color: #111317;
+}
+
+header {
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px ;
+}
+
+.logo{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+.logo span{
+    color: #ff8b00;
+}
+
+.navigation a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color: #ff8b00;
+    transition: 0.5s;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(./assets/nutrition.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 1em 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    color: #ff8b00;
+    transition: 0.5s;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #ff8b00;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.main-2 p{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.main-2 h4{
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.footer {
+    background-color: #0a0b0e;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.footer .social-icons a{
+    color: white;
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+.social-icons a:hover{
+    color: #ff8b00;
+    transition: 0.5s;
+}
+
+@media (max-width:1053px){
+    header{
+        padding: 10px 20px;
+    }
+    .logo{
+        font-size: 1.2em;
+    }
+    .navigation a{
+        font-size: 0.7em;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+    section{
+        padding: 80px 20px;
+    }
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:480px){
+    .logo{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width:452px){
+    .navigation a{
+        padding-left: 5px;
+        font-size: 0.8em;
+    }
+    header{
+        padding: 12px 10px;
+    }
+}
+
+@media (max-width:385px){
+    nav ul li{
+        letter-spacing: 0px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width:355px){
+    body{
+        font-size: 10px;
+    }
+    .navigation a{
+        padding-left: 2px;
+        font-size: 0.8em;
+    }
+    header{
+        padding: 12px 8px;
+    }
+    .logo{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+    }
+    .navigation a{
+        padding-left: 2px;
+        font-size: 0.7em;
+    }
+    header{
+        padding: 12px 8px;
+    }
+    .logo{
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width:275px){
+    body{
+        font-size: 10px;
+    }
+    .navigation a{
+        padding-left: 2px;
+        font-size: 0.6em;
+    }
+    header{
+        padding: 12px 6px;
+    }
+    .logo{
+        font-size: 0.9em;
+    }
+}

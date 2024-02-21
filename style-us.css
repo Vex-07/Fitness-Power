@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; 
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: #111317;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px ;
+  position: fixed;
+}
+
+.logo{
+text-decoration: none;
+color: #fff;
+font-weight: 700;
+font-size: 1.8em;
+}
+
+.logo span{
+  color: #ff8b00;
+}
+
+.navigation a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-left: 30px;
+}
+
+.navigation a:hover{
+  color: #ff8b00;
+  transition: 0.5s;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(./assets/us.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h1{
+    color: #fff;
+    font-size: 6em;
+    font-weight: 900;
+}
+
+.main span{
+    color: #ff8b00;
+}
+
+.main-2 span{
+    color: #fff;
+    letter-spacing: 0.5px;
+    display: block;
+    text-align: center;
+    padding-bottom: 4em;
+}
+
+.main-2 p{
+    color: #fff;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.main-2 h2{
+    color: #ff8b00;
+    text-align: center;
+    margin-bottom: 0.2em;
+    font-weight: 900;
+}
+
+.main-2 i{
+    color: #ff8b00;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.2em;
+}
+
+.main-2 i:hover{
+    color: #fff;
+    transition: 0.5s;
+    transform: scale(1.4);
+}
+
+.ic-1{
+    margin-top: 3em;
+}
+
+.main-3 h1{
+    color: #ff8b00;
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+}
+
+.main-3 p{
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.main-3 h2{
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.main-3 a{
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    margin: 1.5em 0 0.2em 0;
+    transition: 0.5s;
+}
+
+.main-3 a:hover{
+    color: #ff8b00;
+    transform: scale(1.4);
+}
+
+.contact{
+    font-size: 2em;
+    margin-top: 20px;
+    
+}
+
+.footer {
+    background-color: #0a0b0e;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.footer .social-icons a{
+    color: white;
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+.social-icons a:hover{
+    color: #ff8b00;
+    transition: 0.5s;
+}
+
+@media (max-width:1053px){
+    header{
+        padding: 10px 20px;
+    }
+    .logo{
+        font-size: 1.2em;
+    }
+    .navigation a{
+        font-size: 0.7em;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main h1{
+        font-size: 3.5em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main h1{
+        font-size: 4em;
+    }
+}
+
+@media (max-width:480px){
+    .logo{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width:452px){
+    .navigation a{
+        padding-left: 5px;
+        font-size: 0.8em;
+    }
+    header{
+        padding: 12px 10px;
+    }
+    .main h1{
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width:355px){
+    body{
+        font-size: 10px;
+    }
+    .navigation a{
+        padding-left: 2px;
+        font-size: 0.8em;
+    }
+    header{
+        padding: 12px 8px;
+    }
+    .logo{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+    }
+    .navigation a{
+        padding-left: 2px;
+        font-size: 0.7em;
+    }
+    header{
+        padding: 12px 8px;
+    }
+    .logo{
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width:275px){
+    body{
+        font-size: 10px;
+    }
+    .navigation a{
+        padding-left: 2px;
+        font-size: 0.6em;
+    }
+    header{
+        padding: 12px 6px;
+    }
+    .logo{
+        font-size: 0.9em;
+    }
+    .main h1{
+        font-size: 2em;
+    }
+}
